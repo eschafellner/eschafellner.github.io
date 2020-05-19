@@ -24,10 +24,19 @@
 
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline"></h2>
-        <link rel="{{ https://github.com/eschafellner/_url }}" class="btn">View on GitHub</a>
-        <link rel="{{ https://www.xing.com/profile/Edgar_Schafellner/_url }}" class="btn">Find me on xing</a>
-        <link rel="{{ https://www.instagram.com/ed_sch/_url }}" class="btn">Find me on Instagram</a>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
+        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
+      github:
+        repository_url: http://example.com/download.zip
+        another_url: https://github.com/eschafellner/
+      github:
+        zip_url: http://example.com/download.zip
+        another_url: another value
+      github:
+        zip_url: http://example.com/download.zip
+        another_url: another value
     </header>
 
     <main id="content" class="main-content" role="main">
@@ -41,3 +50,4 @@
     </main>
   </body>
 </html>
+

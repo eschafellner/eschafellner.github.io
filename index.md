@@ -5,37 +5,8 @@ and welcome to my Github page! Thanks for stopping by :-)
 
 My name is Edgar Schafellner and i am currently working for xxxldigital - the digital organizational unit of the XXXL Group. Therefore i am a support agent in our digital support department. Our support deparment is the main contact point for all our stakeholders. This is also includes close contact with our QA, project management and DEVs.
 
-If you want to know more about our awesome department please visit our [website](https://www.xxxl.digital/about-en)
+If you want to know more about our awesome department please visit our [website](https://www.xxxl.digital/about-en) :-) We are always on the lookout for new colleagues!
 
+## About myself
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/eschafellner/eschafellner.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+As far as you know i am a support agent at xxxldigital, but i have not always by technically adept person. I was studying Business and Economis at the JKU before I startet a career in the digital sector - so i am always up for a challenge and to learn new things. This is also the reason why this page exists - it was part of a training i have attended.

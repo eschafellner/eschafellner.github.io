@@ -5,7 +5,7 @@ and welcome to my Github page! Thanks for stopping by :-)
 
 My name is Edgar Schafellner and i am currently working for xxxldigital - the digital organizational unit of the XXXL Group. Therefore i am a support agent in our digital support department. Our support deparment is the main contact point for all our stakeholders. This is also includes close contact with our QA, project management and DEVs.
 
-If you want to know more about our awesome department please visit https://www.xxxl.digital/about-en
+If you want to know more about our awesome department please visit our [website](https://www.xxxl.digital/about-en)
 
 
 ### Markdown

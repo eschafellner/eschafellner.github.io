@@ -1,4 +1,6 @@
-<a href="https://github.com/pages-themes/cayman" class="btn">View on GitHub</a>
+<a href="{{ https://www.instagram.com/ed_sch/ }}" class="btn">Find me on Instagram</a>
+
+<a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
 
 ## Welcome to the Github of Edgar Schafellner
 

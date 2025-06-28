@@ -52,4 +52,5 @@
   function decodeEmail(encoded) {
     return atob(encoded);
   }
+  document.querySelector("button").addEventListener("click", checkCode);
 })();

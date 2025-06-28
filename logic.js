@@ -21,7 +21,9 @@
     });
   });
 
-  window.checkCode = async function () {
+	window.checkCode = checkCode;
+	
+	async function checkCode() {
     const values = inputIds.map(id => document.getElementById(id).value.trim());
 
     if (values.some(v => v === "")) {

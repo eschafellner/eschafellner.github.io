@@ -24,23 +24,23 @@
 	window.checkCode = checkCode;
 	
 	async function checkCode() {
-    const values = inputIds.map(id => document.getElementById(id).value.trim());
+	  const values = inputIds.map(id => document.getElementById(id).value.trim());
 
-    if (values.some(v => v === "")) {
-      document.getElementById("result").textContent = "Bitte vier Ziffern eingeben.";
-      return;
-    }
+	  if (values.some(v => v === "")) {
+		document.getElementById("result").textContent = "Bitte vier Ziffern eingeben.";
+		return;
+	  }
 
-    const code = values.join("");
-    const hash = await sha256(code);
+	  const code = values.join("");
+	  const hash = await sha256(code);
 
-    if (hash === correctHash) {
-      const email = decodeEmail(encodedEmail);
-      document.getElementById("result").textContent = email;
-    } else {
-      document.getElementById("result").textContent = "Falscher Code.";
-    }
-  };
+	  if (hash === correctHash) {
+		const email = decodeEmail(encodedEmail);
+		document.getElementById("result").textContent = email;
+	  } else {
+		document.getElementById("result").textContent = "Falscher Code.";
+	  }
+	};
 
   async function sha256(message) {
     const msgBuffer = new TextEncoder().encode(message);

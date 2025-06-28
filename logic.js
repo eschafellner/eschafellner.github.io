@@ -1,11 +1,10 @@
-// What are you looking for? :-)
-
 (async function () {
   const correctHash = "fc3c6c7f48c7522f3beea806fd3f6de0b54e80e1882f2a0012ff39dbb20b8c6d"; // SHA-256 von "2005"
   const encodedEmail = "c2FsemFtdEBoYWFnLW5ldHdvcnguYXQ="; // Base64 von salzamt@haag-networx.at
 
   const inputIds = ["digit1", "digit2", "digit3", "digit4"];
 
+  // Fokussprung bei Eingabe
   inputIds.forEach((id, index) => {
     const el = document.getElementById(id);
     el.addEventListener("input", () => {
@@ -21,25 +20,27 @@
     });
   });
 
-	async function checkCode() {
-	  const values = inputIds.map(id => document.getElementById(id).value.trim());
+  // Funktion zum Prüfen des Codes
+  async function checkCode() {
+    const values = inputIds.map(id => document.getElementById(id).value.trim());
 
-	  if (values.some(v => v === "")) {
-		document.getElementById("result").textContent = "Bitte vier Ziffern eingeben.";
-		return;
-	  }
+    if (values.some(v => v === "")) {
+      document.getElementById("result").textContent = "Bitte vier Ziffern eingeben.";
+      return;
+    }
 
-	  const code = values.join("");
-	  const hash = await sha256(code);
+    const code = values.join("");
+    const hash = await sha256(code);
 
-	  if (hash === correctHash) {
-		const email = decodeEmail(encodedEmail);
-		document.getElementById("result").textContent = email;
-	  } else {
-		document.getElementById("result").textContent = "Falscher Code.";
-	  }
-	};
+    if (hash === correctHash) {
+      const email = decodeEmail(encodedEmail);
+      document.getElementById("result").textContent = email;
+    } else {
+      document.getElementById("result").textContent = "Falscher Code.";
+    }
+  }
 
+  // SHA-256 Hash-Funktion
   async function sha256(message) {
     const msgBuffer = new TextEncoder().encode(message);
     const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);
@@ -47,8 +48,11 @@
     return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
   }
 
+  // E-Mail dekodieren
   function decodeEmail(encoded) {
     return atob(encoded);
   }
+
+  // Event-Listener für Button setzen
   document.querySelector("button").addEventListener("click", checkCode);
 })();
